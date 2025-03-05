@@ -61,7 +61,7 @@ public class DynamicDataSource {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder, DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("com.asmtunis.promenu.baseentity")
+                .packages("com.example.multidatasource.baseentity")
                 .build();
     }
 }
